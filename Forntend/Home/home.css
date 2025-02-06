@@ -77,8 +77,13 @@ body {
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
-
+.container{
+  width: 100%;
+}
 .hot-map-preview {
+  width: 60%;
+  height: 650px;
+  
   background-color: #FFFFFF;
   padding: 1.5rem;
   border-radius: 10px;
