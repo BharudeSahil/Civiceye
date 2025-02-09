@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIR Reporting - Crime Reporting</title>
+  <link rel="stylesheet" href="/Forntend/FIr-Registration/register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">CrimeReport</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- User Authentication Section -->
+  <section class="user-auth">
+    <div class="container">
+      <h1>FIR Reporting</h1>
+      <div class="auth-options">
+        <div class="auth-card">
+          <h2>Log In</h2>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="id-proof">ID Proof (Aadhaar, PAN, etc.)</label>
+              <input type="text" id="id-proof" name="id-proof" placeholder="Enter your ID proof number" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Log In</button>
+          </form>
+        </div>
+        <div class="auth-card">
+          <h2>Guest Reporting</h2>
+          <p>For emergencies, you can report as a guest without logging in.</p>
+          <a href="#fir-form" class="btn">Report as Guest</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIR Form Section -->
+  <section class="fir-form" id="fir-form">
+    <div class="container">
+      <h2>File an FIR</h2>
+      <form id="fir-report-form">
+        <div class="form-group">
+          <label for="incident-type">Incident Type</label>
+          <select id="incident-type" name="incident-type" required>
+            <option value="">Select Incident Type</option>
+            <option value="theft">Theft</option>
+            <option value="assault">Assault</option>
+            <option value="cybercrime">Cybercrime</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="incident-date">Date and Time of Incident</label>
+          <input type="datetime-local" id="incident-date" name="incident-date" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="Enter location or use map" required>
+          <div id="map" class="map-preview"></div>
+        </div>
+        <div class="form-group">
+          <label for="description">Description of Incident</label>
+          <textarea id="description" name="description" rows="5" placeholder="Describe the incident in detail" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="evidence">Upload Evidence</label>
+          <input type="file" id="evidence" name="evidence" multiple>
+        </div>
+        <div class="form-group">
+          <label for="anonymous">
+            <input type="checkbox" id="anonymous" name="anonymous"> Report Anonymously
+          </label>
+        </div>
+        <button type="submit" class="btn">Submit FIR</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Confirmation and Tracking Section -->
+  <section class="confirmation">
+    <div class="container">
+      <h2>FIR Confirmation</h2>
+      <div id="fir-confirmation" class="confirmation-details">
+        <p>Your FIR has been successfully submitted!</p>
+        <p><strong>FIR Number:</strong> <span id="fir-number">123456</span></p>
+        <p><strong>Status:</strong> <span id="fir-status">Under Review</span></p>
+        <button class="btn" id="download-fir">Download FIR Copy</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-contacts">
+        <h3>Emergency Contacts</h3>
+        <ul>
+          <li>Police: 100</li>
+          <li>Ambulance: 102</li>
+          <li>Women's Helpline: 1091</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

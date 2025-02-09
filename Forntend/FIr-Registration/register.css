@@ -1,0 +1,174 @@
+/* User Authentication Section */
+.user-auth {
+  padding: 4rem 0;
+}
+
+.user-auth h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0A2647;
+}
+
+.auth-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.auth-card {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #0A2647;
+}
+
+.auth-card .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.auth-card label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #0A2647;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-card .btn {
+  background-color: #0A2647;
+  color: #FFFFFF;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+.auth-card .btn:hover {
+  background-color: #DC143C;
+}
+
+/* FIR Form Section */
+.fir-form {
+  padding: 4rem 0;
+  background-color: #F5F5F5;
+}
+
+.fir-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0A2647;
+}
+
+.fir-form form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fir-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.fir-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #0A2647;
+}
+
+.fir-form input,
+.fir-form select,
+.fir-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.fir-form textarea {
+  resize: vertical;
+}
+
+.fir-form .map-preview {
+  height: 200px;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.fir-form .btn {
+  background-color: #0A2647;
+  color: #FFFFFF;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+.fir-form .btn:hover {
+  background-color: #DC143C;
+}
+
+/* Confirmation and Tracking Section */
+.confirmation {
+  padding: 4rem 0;
+}
+
+.confirmation h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0A2647;
+}
+
+.confirmation-details {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirmation-details p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+.confirmation-details .btn {
+  background-color: #0A2647;
+  color: #FFFFFF;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.confirmation-details .btn:hover {
+  background-color: #DC143C;
+}

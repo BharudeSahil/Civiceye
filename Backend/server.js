@@ -5,7 +5,7 @@ const twilio = require("twilio");
 
 const app = express();
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.json()); 
 
 // Replace with your Twilio credentials
 const accountSid = "AC363c16fb8248ad0808b8b2029ff5781a";
